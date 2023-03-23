@@ -1,5 +1,5 @@
 import React from "react";
-import Carrousel from "./components/Carrousel";
+import ControlledCarousel from "./components/ControlledCarousel";
 import Carts from "./components/Carts";
 import Header from "./components/Header";
 import Navbarre from "./components/Navbarre";
@@ -12,7 +12,7 @@ function App() {
       <Navbarre />
       <MenuLateral />
       <Header />
-      <Carrousel />
+      <ControlledCarousel />
       <Carts />
       <Footer />
     </div>
