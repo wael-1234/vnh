@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Navbarre />
-      <MenuLateral />
+      {/* <MenuLateral /> */}
       <Header />
       <ControlledCarousel />
       <Carts />

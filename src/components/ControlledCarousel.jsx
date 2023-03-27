@@ -1,6 +1,12 @@
 import React, { useState } from "react";
+import { NavLink } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
-import img1 from "../pictures/IMG_20230320_161858.jpg";
+import img1 from "../pictures/truck.jpg";
+import img2 from "../pictures/plane.jpeg";
+import img3 from "../pictures/House.jpg";
+import img4 from "../pictures/clothes.jpg";
+
+
 
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -10,47 +16,55 @@ function ControlledCarousel() {
   };
 
   return (
-    <div className="container" style={{ backgroundColor:'black'}}>
-      <div className="container" style={{ width: "1000px", height: "600px" }}>
+    <div style={{ backgroundColor:'black'}}>
+      <div className="container" style={{ width: "1000px", height: "600px",padding:'100px',ackgroundColor: 'rgba(var(--bs-dark-rgb)'}}>
         <Carousel activeIndex={index} onSelect={handleSelect}>
-          <Carousel.Item>
+          <Carousel.Item interval={3500}>
             <img
               className="d-block w-100"
               src={img1}
-              style={{ width: "800px", height: "400px" }}
+              style={{ height: "400px" , borderRadius:'10px'}}
               alt="First slide"
             />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <Carousel.Caption style={{color:'lightblue'}}>
+              <h2>First product</h2>
+              <p>Representative Details for this product ... <NavLink>View more .. </NavLink></p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item interval={3500}>
             <img
               className="d-block w-100"
-              src={img1}
-              style={{ width: "800px", height: "400px" }}
-              alt="Second slide"
+              src={img2}
+              style={{ height: "400px" , borderRadius:'10px'}}
+              alt="First slide"
             />
-
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <Carousel.Caption style={{color:'white'}}>
+              <h2>Second product</h2>
+              <p>Representative Details for this product ... <NavLink>View more .. </NavLink></p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item interval={3500}>
             <img
               className="d-block w-100"
-              src={img1}
-              style={{ width: "800px", height: "400px" }}
-              alt="Third slide"
+              src={img3}
+              style={{ height: "400px" , borderRadius:'10px'}}
+              alt="First slide"
             />
-
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+            <Carousel.Caption style={{color:'orange'}}>
+              <h2>Third product</h2>
+              <p>Representative Details for this product ... <NavLink>View more .. </NavLink></p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={3500}>
+            <img
+              className="d-block w-100"
+              src={img4}
+              style={{ height: "400px", borderRadius:'10px' }}
+              alt="First slide"
+            />
+            <Carousel.Caption style={{color:'black'}}>
+              <h2>First product</h2>
+              <p>Representative Details for this product ... <NavLink>View more .. </NavLink></p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
