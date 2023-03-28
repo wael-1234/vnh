@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { NavLink } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
-import img1 from "../pictures/truck.jpg";
-import img2 from "../pictures/plane.jpeg";
-import img3 from "../pictures/House.jpg";
-import img4 from "../pictures/clothes.jpg";
+import img1 from "./pictures/truck.jpg";
+import img2 from "./pictures/plane.jpeg";
+import img3 from "./pictures/House.jpg";
+import img4 from "./pictures/clothes.jpg";
 
 
 

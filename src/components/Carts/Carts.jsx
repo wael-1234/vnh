@@ -1,5 +1,6 @@
 import {Card,Col,Row,NavLink} from 'react-bootstrap';
-import img1 from "../pictures/House.jpg";
+import img1 from "./pictures/truck.jpg";
+
 
 function GridExample() {
   return (
